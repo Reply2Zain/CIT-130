@@ -7,6 +7,8 @@ package place;
 import java.util.HashMap;
 import java.util.Map; 
 import java.util.Scanner;
+import java.util.Iterator;
+import java.util.Set;
 /**
  *
  * @author zain.aaban
@@ -19,6 +21,7 @@ public class Place {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in); 
+        
         
         System.out.println("Do you want to see a map of Dubai? (yes or no)");
         System.out.print("> ");
@@ -36,17 +39,35 @@ public class Place {
         map.clear();
     }
     
-     if (map.isEmpty())  
-        { 
-            System.out.println("-----");
-            System.out.println("Map is empty"); 
-        } 
-          
-        else
-        { 
-            System.out.println("-----");
-            System.out.println("The contents of the map are: " + map); 
-    }
-    
+        switch (visit) {
+            case "yes":
+                System.out.println("-------");
+                System.out.println("The contents of the map are: " + map);
+                break;
+            case "no":
+                System.out.println("-------");
+                System.out.println("Map is empty because you said no");
+                break;
+            case "other":
+                System.out.println("-------");
+                System.out.println("other was stated, say 'yes' or 'no'");
+                break;
+            default:
+                System.out.println("-------");
+                System.out.println("Please run the program again and choose 'yes' or 'no'");
+                break;
+        }
+     
+       
+        System.out.println();
+        // System.out.println("The full list of keys are: " + map.keySet());
+       Set setOfKeys = map.keySet();
+       setOfKeys.iterator();
+       Iterator<String> iter = setOfKeys.iterator(); 
+            while (iter.hasNext()){
+                String z = iter.next();
+                System.out.println(z);
+        }
+            
 }
 }
