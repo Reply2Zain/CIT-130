@@ -41,16 +41,18 @@ public class PolishMathTest {
         
         stack.pop(); //removes the equal sign from stack
         
-        while (x<=i) {
+        System.out.println("i is equal to " + i);
+        while (x<i) {
         valueX =  Integer.parseInt(stack.get(x));
-            System.out.println("#"+x+ "is " + valueX);
+            System.out.println("#"+x+ " is " + valueX);
         x++;
         }
 
         //System.out.println("int x is " + x);
         //stack.push("2");
         //stack.push("5");
-  
+        
+        System.out.println("This is the resulting stack");
         System.out.println(stack);   
     
         }
