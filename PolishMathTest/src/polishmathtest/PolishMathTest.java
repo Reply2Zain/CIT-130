@@ -17,13 +17,14 @@ public class PolishMathTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-  // Creating a Stack
+  // Creating a Stackds
     String s = "placeHolder" ;
     int total = 0;
     int next = 0;
     int stackSize = -1; //counter
     int stackTicker = 0;
     
+   
         Stack <String> stack = new Stack <>();  // create a stack called stack
         Scanner scan = new Scanner(System.in); //makes a scanner object
         System.out.println("Welcome to Polish Math Comp.");
@@ -41,7 +42,15 @@ public class PolishMathTest {
         stack.pop(); //removes the equal sign from stack
         
         
-        total =  Integer.parseInt(stack.get(stackTicker));
+        try{
+            total =  Integer.parseInt(stack.get(stackTicker));
+            }
+            catch(NumberFormatException e){
+                System.out.println("---------------");
+                System.out.println("Error:");
+                System.out.println("Please input numbers and operators only");
+                System.out.println("---------------");
+            } 
         stackTicker++;      // puts the top value into total and counts the stackTicker
         
         
@@ -63,8 +72,15 @@ public class PolishMathTest {
             ;
         
         else
+            try{
             next =  Integer.parseInt(stack.get(stackTicker));
-        
+            }
+            catch(NumberFormatException e){
+                System.out.println("---------------");
+                System.out.println("Error:");
+                System.out.println("Please input numbers and operators only");
+                System.out.println("---------------");
+            }
         stackTicker++;
         }
 
