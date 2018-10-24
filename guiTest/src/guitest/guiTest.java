@@ -7,6 +7,7 @@ package guitest;
 
 import java.awt.BorderLayout;
 import java.awt.Button;
+import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.Frame;
@@ -16,6 +17,7 @@ import java.awt.GridLayout;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.Dimension;
+import java.awt.color;
 
 /**
  *
@@ -90,6 +92,15 @@ public class guiTest {
        //add instructionLabel to bottomPanel
        bottomPanel.add(instructionLabel);
        
+       //create and set label font
+       labelFont = new Font ("",Font.PLAIN,25);
+       instructionLabel.setFont(labelFont);
+       pushedButton1.setFont(labelFont);
+       pushedButton2.setFont(labelFont);
+       
+       //make Label text green
+       pushedButton1.setForeground(Color.GREEN);
+       pushedButton2.setForeground
        
        mainFrame.setVisible(true);
        
