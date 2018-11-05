@@ -17,6 +17,6 @@ public class OccSubclass extends PublicInfoBundle{
     
     @Override
     public void attachCaseMessage(String msg){
-        System.out.println("Aimulating attaching message" + msg);
+        System.out.println("Simulating attaching message " + msg);
     } // Close overriden method
 }
