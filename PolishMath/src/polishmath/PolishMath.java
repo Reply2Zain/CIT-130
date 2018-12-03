@@ -29,7 +29,7 @@ public class PolishMath {
         System.out.println("Welcome to Polish Math Comp.");
         System.out.println("Type out the list of value");  //Welcome text
        
-        
+        // thre
         
                 
         while (!s.endsWith("=")){
