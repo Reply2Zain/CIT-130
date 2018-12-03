@@ -8,6 +8,8 @@ import java.util.HashMap;
 import java.util.Map; 
 import java.util.Scanner;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Set;
 /**
  *
@@ -54,20 +56,42 @@ public class Place {
                 break;
             default:
                 System.out.println("-------");
-                System.out.println("Please run the program again and choose 'yes' or 'no'");
+                System.out.println("Please run the program again and choose "
+                        + "'yes' or 'no'");
                 break;
         }
      
        
         System.out.println();
         // System.out.println("The full list of keys are: " + map.keySet());
-       Set setOfKeys = map.keySet();
+      
+        /**
+         * 
+         */
+       { Set setOfKeys = map.keySet();
        setOfKeys.iterator();
        Iterator<String> iter = setOfKeys.iterator(); 
             while (iter.hasNext()){
+                int i = 1;
                 String z = iter.next();
                 System.out.println(z);
+                 System.out.println();
+                 i++;
         }
             
-}
-}
+           
+    } // closes iterator
+    } // main method
+        
+        public List <String> printMap (Map<String, String> name) {
+            
+                return new LinkedList<>();
+                
+                
+     
+        
+} // close printmap
+    
+    
+} // closer place class
+
