@@ -49,7 +49,7 @@ class IorE extends PersonalityType {
         
         // Error 1: catches length error
         while (inputLength != 4){
-            System.out.println("Error 1: Please enter exactly 4 letters that are"
+            System.out.println("Error 1: Please enter the exact 4 letters that are"
                     + " associated with your MBTI type: ");
             Input = sc.next();
             inputLength = Input.length();
@@ -92,7 +92,7 @@ class IorE extends PersonalityType {
             while (inputLength != 4 || charCheck == false){
             
              System.out.println("");
-            System.out.println("Error 2: Please enter exactly 4 letters that are"
+            System.out.println("Error 2: Please enter the exact 4 letters that are"
                     + " associated with your MBTI type: ");
             Input = sc.next();
             inputLength = Input.length();
