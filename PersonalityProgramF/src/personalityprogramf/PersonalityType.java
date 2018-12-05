@@ -110,7 +110,7 @@ class IorE extends PersonalityType {
             PJ = Character.toUpperCase(PJ);
             
             // runs the letter check 
-            charCheck = true;
+                charCheck = true;
             if (IE != 'I' && IE !='E'){
                 charCheck = false;
             }
