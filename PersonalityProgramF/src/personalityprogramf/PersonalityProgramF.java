@@ -26,8 +26,7 @@ public class PersonalityProgramF {
         char PJ;
         
         System.out.println("Please type your four MBTI personality type letters");
-                
-        System.out.println("I or E");
+        
         
         
         Scanner sc = new Scanner(System.in);
