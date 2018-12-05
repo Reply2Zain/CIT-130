@@ -26,7 +26,15 @@ public class PersonalityType {
         }
         
 class IorE extends PersonalityType {
-               
+                       
+                IorE extroverted(){
+                   outdoors += 1 ;
+                    return null;
+               }
+}
+
+class Outdoors extends PersonalityType{
+    
 }
 
 
@@ -69,8 +77,6 @@ class IorE extends PersonalityType {
             TF = Character.toUpperCase(TF);
             PJ = Character.toUpperCase(PJ);
           
-        System.out.println("IE is "+IE);
-        System.out.println("NS is " +NS);
     
     if (IE != 'I' && IE !='E'){
                 charCheck = false;
@@ -84,10 +90,14 @@ class IorE extends PersonalityType {
             if (PJ != 'P' && PJ !='J'){
                 charCheck = false;
             }
-        System.out.println(" ");
-            System.out.println("CHAR " + charCheck) ;
-            System.out.println("InputLength " + inputLength);
-            
+        
+        /* //This checked the status of the program before Error 2 loop
+            System.out.println(" ");
+            System.out.println("CharCheck Boolean:  " + charCheck) ;
+            System.out.println("InputLength: " + inputLength);
+        
+        */
+        
          // Error 2: catches wrong letter error + maintains length check
             while (inputLength != 4 || charCheck == false){
             
@@ -125,9 +135,7 @@ class IorE extends PersonalityType {
             }
             
         }
-            
-    
-            
+                                    
             
         System.out.println("");
         System.out.println("You reached the end of the program");
