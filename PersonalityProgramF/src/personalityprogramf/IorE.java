@@ -7,19 +7,21 @@ package personalityprogramf;
 
 /**
  *
- * @author reply
+ * @author Zain
  */
-public class NorS extends PersonalityType {
-         
-     public void Intuition(){
+public class IorE extends PersonalityType{
+    
+    
+                
+                
+                public void Extroverted(){
                    outdoors += 1 ;
-                    System.out.println("This is outdoors");
+                    System.out.println("Outdoors has added one");
                      
                }
-     
-     public void Sensing(){
+                public void Introverted(){
                     indoors +=1;
                     System.out.println("Indoors has added one");
                 }
-    
+        
 }

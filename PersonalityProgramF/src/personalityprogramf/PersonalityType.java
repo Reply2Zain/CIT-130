@@ -15,7 +15,7 @@ public class PersonalityType {
         String isExtroverted;
         
         //These are the personality factors
-        static int outdoors;        // give weight to each
+        int outdoors;        // give weight to each
         int indoors;             // give weight to each
             //or
         int location; // set outdoors >1, set indoor <1
@@ -26,20 +26,12 @@ public class PersonalityType {
         }
        
        
-        public static int getOutdoors(){
+        public int getOutdoors(){
             outdoors +=100;
             return outdoors;
         }
         
-static class IorE extends PersonalityType {
-                
-                
-                public IorE Extroverted(){
-                   outdoors += 1 ;
-                    System.out.println("This is outdoors");
-                     return null;
-               }
-        }
+
 
 class Outdoors extends PersonalityType{
     
@@ -67,7 +59,7 @@ class Outdoors extends PersonalityType{
         
         // Error 1: catches length error
         while (inputLength != 4){
-            System.out.println("Error 1: Please enter the exact 4 letters that are"
+            System.out.println("Error: Please enter the exact 4 letters that are"
                     + " associated with your MBTI type: ");
             Input = sc.next();
             inputLength = Input.length();
@@ -112,7 +104,7 @@ class Outdoors extends PersonalityType{
             while (inputLength != 4 || charCheck == false){
             
              System.out.println("");
-            System.out.println("Error 2: Please enter the exact 4 letters that are"
+            System.out.println("Error: Please enter the exact 4 letters that are"
                     + " associated with your MBTI type: ");
             Input = sc.next();
             inputLength = Input.length();
@@ -150,11 +142,17 @@ class Outdoors extends PersonalityType{
         System.out.println("");
         System.out.println("You reached the end of the program");
         
-                
-        int results = PersonalityType.getOutdoors();
-        System.out.println(results);
-        System.out.println(IorE.getOutdoors());
+        PersonalityType pp = new PersonalityType();
+        IorE iiee = new IorE();
         
+        
+        /*
+        int results = pp.getOutdoors();
+        System.out.println(results);
+        System.out.println(iiee.getOutdoors());
+        iiee.Extroverted();
+        System.out.println(outdoors);
+        */
     }
         
         /*
