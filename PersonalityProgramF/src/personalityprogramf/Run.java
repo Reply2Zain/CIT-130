@@ -13,6 +13,7 @@ import java.util.Scanner;
  
 public class Run {
     public static void main(String[] args) {
+        //
         char IE; 
         char NS;
         char TF;

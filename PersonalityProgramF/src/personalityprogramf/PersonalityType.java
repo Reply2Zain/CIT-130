@@ -24,7 +24,7 @@ public class PersonalityType {
         public int getOutdoors(){
             System.out.println("Outdoors value is: " + outdoors);
             return outdoors;
-        }
+        } // close getOutdoors
         
 
 }
