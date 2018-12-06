@@ -7,8 +7,8 @@ package personalityprogramf;
 import java.util.Scanner;
 /**
  *
- * @author Zain
- */
+ * @author Zain A
+ */ 
 public class PersonalityType {
 
     /*
