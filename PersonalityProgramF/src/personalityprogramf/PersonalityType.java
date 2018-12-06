@@ -10,28 +10,43 @@ import java.util.Scanner;
  * @author Zain
  */
 public class PersonalityType {
+
+    /*
+    private static void Outdoors() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    */
     
         String introvert;
         String extrovert;
-        public static boolean charCheck = true;
+        static boolean charCheck = true;
         
         //These are the personality factors
-        public int outdoors; // give weight to each
-        public int indoors; // give weight to each
+        static int outdoors; // give weight to each
+        int indoors; // give weight to each
             //or
-        public int location; // set outdoors >1, set indoor <1
+        int location; // set outdoors >1, set indoor <1
         
-        PersonalityType(){
+       PersonalityType(){
             System.out.println("I am the constructor of PersonalityType");
+            
+        }
+       
+       
+        public static int getOutdoors(){
+            outdoors +=100;
+            return outdoors;
         }
         
-class IorE extends PersonalityType {
-                       
-                IorE extroverted(){
+static class IorE extends PersonalityType {
+                
+                
+                public IorE Extroverted(){
                    outdoors += 1 ;
-                    return null;
+                    System.out.println("This is outdoors");
+                     return null;
                }
-}
+        }
 
 class Outdoors extends PersonalityType{
     
@@ -140,6 +155,10 @@ class Outdoors extends PersonalityType{
         System.out.println("");
         System.out.println("You reached the end of the program");
         
+                
+        int results = PersonalityType.getOutdoors();
+        System.out.println(results);
+        System.out.println(IorE.getOutdoors());
         
     }
         
