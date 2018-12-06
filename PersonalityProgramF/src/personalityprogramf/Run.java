@@ -12,8 +12,9 @@ import java.util.Scanner;
 
  
 public class Run {
+
     public static void main(String[] args) {
-        //
+        // MBTI personality types
         char IE; 
         char NS;
         char TF;
@@ -102,15 +103,19 @@ public class Run {
             }
             
         }
-                                    
-            
-        System.out.println("");
-        System.out.println("You reached the end of the program");
         
         PersonalityType pp = new PersonalityType();
-        IorE iiee = new IorE();
+        IorE iore = new IorE();
+        
+        if (IE == 'E'){
+            iore.Extroverted();
+            iore.getOutdoors();
+        } 
         
         
+        
+        System.out.println("");
+        System.out.println("You reached the end of the program");
         
         /*
         int results = pp.getOutdoors();

@@ -17,8 +17,8 @@ public class IorE extends PersonalityType{
                 public void Extroverted(){
                    outdoors += 1 ;
                     System.out.println("Outdoors has added one");
-                     
                }
+                
                 public void Introverted(){
                     indoors +=1;
                     System.out.println("Indoors has added one");

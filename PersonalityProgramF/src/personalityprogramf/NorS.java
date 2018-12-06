@@ -21,5 +21,7 @@ public class NorS extends PersonalityType {
                     indoors +=1;
                     System.out.println("Indoors has added one");
                 }
-    
+     
+      
+     
 }
