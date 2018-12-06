@@ -18,10 +18,14 @@ public class Run {
         char IE; 
         char NS;
         char TF;
-        char PJ;
+        char JP;
         boolean charCheck = true;  //tests MBTI input validity
 
-        
+        PersonalityType pType = new PersonalityType();
+        IorE iore = new IorE();
+        NorS nors = new NorS();
+        TorF torf = new TorF();
+        JorP jorp = new JorP();
         
         System.out.println("Please type your four MBTI personality type letters: ");
         
@@ -30,10 +34,12 @@ public class Run {
         Scanner sc = new Scanner(System.in);
         String Input = sc.next();
         
+        
         int inputLength = Input.length();
        
             // Checks for error 1 - catches length error
         while (inputLength != 4){
+            System.out.println("");
             System.out.println("Error: Please enter the exact 4 letters that are"
                     + " associated with your MBTI type: ");
             Input = sc.next();
@@ -44,13 +50,13 @@ public class Run {
             IE = Input.charAt(0);
             NS = Input.charAt(1);
             TF = Input.charAt(2);
-            PJ = Input.charAt(3);
+            JP = Input.charAt(3);
         
             // sets all characters to uppercase 
             IE = Character.toUpperCase(IE);
             NS = Character.toUpperCase(NS);
             TF = Character.toUpperCase(TF);
-            PJ = Character.toUpperCase(PJ);
+            JP = Character.toUpperCase(JP);
           
             
             if (IE != 'I' && IE !='E'){
@@ -62,7 +68,7 @@ public class Run {
             if (TF != 'T' && TF !='F'){
                 charCheck = false;
             }
-            if (PJ != 'P' && PJ !='J'){
+            if (JP != 'P' && JP !='J'){
                 charCheck = false;
             }
         
@@ -79,13 +85,13 @@ public class Run {
             IE = Input.charAt(0);
             NS = Input.charAt(1);
             TF = Input.charAt(2);
-            PJ = Input.charAt(3);
+            JP = Input.charAt(3);
             } 
             
             IE = Character.toUpperCase(IE);
             NS = Character.toUpperCase(NS);
             TF = Character.toUpperCase(TF);
-            PJ = Character.toUpperCase(PJ);
+            JP = Character.toUpperCase(JP);
             
             // runs the letter check 
                 charCheck = true;
@@ -98,19 +104,31 @@ public class Run {
             if (TF != 'T' && TF !='F'){
                 charCheck = false;
             }
-            if (PJ != 'P' && PJ !='J'){
+            if (JP != 'P' && JP !='J'){
                 charCheck = false;
             }
             
-        }
+        } // closes while loop - error 2 check
         
-        PersonalityType pp = new PersonalityType();
-        IorE iore = new IorE();
+        //
+        String InputU = Input.toUpperCase();
+        pType.getPersonalityType(InputU);
         
         if (IE == 'E'){
             iore.Extroverted();
-            iore.getOutdoors();
-        } 
+        }
+        if (IE == 'I'){
+            iore.Introverted();
+        }
+        if (NS == 'N'){
+            nors.Intuition();
+        }
+        if (IE == 'S'){
+            nors.Sensing();
+        }
+        
+        
+        
         
         
         

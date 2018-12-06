@@ -16,12 +16,18 @@ public class IorE extends PersonalityType{
                 
                 public void Extroverted(){
                    outdoors += 1 ;
-                    System.out.println("Outdoors has added one");
+                    System.out.println("");
+                    System.out.println("Extroverted diagnostic:");
+                    System.out.println("Extroverted added one to outdoors");
+                    getOutdoors();
                }
                 
                 public void Introverted(){
                     indoors +=1;
-                    System.out.println("Indoors has added one");
+                    System.out.println("");
+                    System.out.println("Introverted diagnostic:");
+                    System.out.println("Introverted has added one to indoors");
+                    getIndoors();
                 }
         
 }

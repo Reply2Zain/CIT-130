@@ -13,13 +13,17 @@ public class NorS extends PersonalityType {
          
      public void Intuition(){
                    outdoors += 1 ;
-                    System.out.println("This is outdoors");
+                    System.out.println("");
+                    System.out.println("Intution diagnostic:");
+                    System.out.println("Intition has added one to outdoors");
                      
                }
      
      public void Sensing(){
                     indoors +=1;
-                    System.out.println("Indoors has added one");
+                    System.out.println("");
+                    System.out.println("Sensing Diagnostic:");
+                    System.out.println("Sensing as added one to indoors");
                 }
      
       

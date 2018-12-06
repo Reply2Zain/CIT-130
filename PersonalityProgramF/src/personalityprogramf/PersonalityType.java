@@ -14,18 +14,25 @@ public class PersonalityType {
         //These are the personality factors
         int outdoors;   
         int indoors;
-                
-       void PersonalityType(){
-            System.out.println("The personality type inputted is: ");
-            
-        }
+        String Input;
+     
+     void getPersonalityType(String Input){
+            System.out.println("");
+            System.out.println("Personality type entered: ");
+            System.out.println(Input);
+        } // close getPersonalityType      
        
-       
-     public int getOutdoors(){
-            System.out.println("Outdoors value is:" + outdoors );
+     int getOutdoors(){
+            System.out.println("Outdoors value is: " + outdoors );
+            System.out.println("");
             return outdoors;
-            
-        } // close getOutdoors 
+     }  //  close getOutdoors
+     
+     int getIndoors(){
+            System.out.println("Indoors value is: " + indoors );
+            System.out.println("");
+            return indoors;
+        } // close getIndoors
         
 
 }
