@@ -17,43 +17,41 @@ public class Run {
         char NS;
         char TF;
         char PJ;
-        boolean charCheck = true;
+        boolean charCheck = true;  //tests MBTI input validity
 
         
         
         System.out.println("Please type your four MBTI personality type letters: ");
         
         
-        
+        // Creates scanner object 
         Scanner sc = new Scanner(System.in);
         String Input = sc.next();
         
         int inputLength = Input.length();
-        
-        // Error 1: catches length error
+       
+            // Checks for error 1 - catches length error
         while (inputLength != 4){
             System.out.println("Error: Please enter the exact 4 letters that are"
                     + " associated with your MBTI type: ");
             Input = sc.next();
             inputLength = Input.length();
         }
-                
-        
-     
             
+            // places each MBTI letter into respective char value
             IE = Input.charAt(0);
             NS = Input.charAt(1);
             TF = Input.charAt(2);
             PJ = Input.charAt(3);
         
-     
+            // sets all characters to uppercase 
             IE = Character.toUpperCase(IE);
             NS = Character.toUpperCase(NS);
             TF = Character.toUpperCase(TF);
             PJ = Character.toUpperCase(PJ);
           
-    
-    if (IE != 'I' && IE !='E'){
+            
+            if (IE != 'I' && IE !='E'){
                 charCheck = false;
             }
             if (NS != 'N' && NS !='S'){
@@ -66,14 +64,7 @@ public class Run {
                 charCheck = false;
             }
         
-        /* //This checked the status of the program before Error 2 loop
-            System.out.println(" ");
-            System.out.println("CharCheck Boolean:  " + charCheck) ;
-            System.out.println("InputLength: " + inputLength);
-        
-        */
-        
-         // Error 2: catches wrong letter error + maintains length check
+         // Checks for error 2 - catches both length and letter type error
             while (inputLength != 4 || charCheck == false){
             
              System.out.println("");
@@ -127,22 +118,9 @@ public class Run {
         iiee.Extroverted();
         System.out.println(outdoors);
         */
-    }
         
-        /*
-        System.out.println("Please type the second of your "
-                + "four MBTI personality type letters");
-        System.out.println("N or S");
-        
-        System.out.println("Please type the third of your "
-                + "four MBTI personality type letters");
-        System.out.println("T or F");
-        
-        System.out.println("Please type the first of your "
-                + "four MBTI personality type letters");
-        System.out.println("P or J");
-    */
-    }
+        } // closes psvm
+    } // closes class
 
     
     

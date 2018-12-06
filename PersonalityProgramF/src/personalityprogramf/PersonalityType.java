@@ -11,24 +11,18 @@ package personalityprogramf;
  */
 
 public class PersonalityType {
-    
-        String isIntroverted;
-        String isExtroverted;
-        
         //These are the personality factors
-        int outdoors;        // give weight to each
-        int indoors;             // give weight to each
-            //or
-        int location; // set outdoors >1, set indoor <1
+        int outdoors;   
+        int indoors;
         
        void PersonalityType(){
-            System.out.println("I am the constructor of PersonalityType");
+            System.out.println("The personality type inputted is: ");
             
         }
        
        
         public int getOutdoors(){
-            outdoors +=100;
+            System.out.println("Outdoors value is: " + outdoors);
             return outdoors;
         }
         
