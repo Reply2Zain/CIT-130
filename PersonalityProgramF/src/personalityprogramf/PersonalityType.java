@@ -10,20 +10,13 @@ import java.util.Scanner;
  * @author Zain A
  */ 
 public class PersonalityType {
-
-    /*
-    private static void Outdoors() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    */
     
-        String introvert;
-        String extrovert;
-        static boolean charCheck = true;
+        String isIntroverted;
+        String isExtroverted;
         
         //These are the personality factors
-        static int outdoors; // give weight to each
-        int indoors; // give weight to each
+        static int outdoors;        // give weight to each
+        int indoors;             // give weight to each
             //or
         int location; // set outdoors >1, set indoor <1
         
@@ -59,6 +52,8 @@ class Outdoors extends PersonalityType{
         char NS;
         char TF;
         char PJ;
+        boolean charCheck = true;
+
         
         
         System.out.println("Please type your four MBTI personality type letters: ");
