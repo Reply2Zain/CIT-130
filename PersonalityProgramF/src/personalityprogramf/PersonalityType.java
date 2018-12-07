@@ -15,7 +15,7 @@ public class PersonalityType {
         int outdoors;   
         int indoors;
         String Input;
-     
+        
      void getPersonalityType(String Input){
             System.out.println("");
             System.out.println("Personality type entered: ");
