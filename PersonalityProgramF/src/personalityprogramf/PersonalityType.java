@@ -18,19 +18,18 @@ public class PersonalityType {
         
      void getPersonalityType(String Input){
             System.out.println("");
-            System.out.println("Personality type entered: ");
+            System.out.println("");
+            System.out.print("Personality type entered: ");
             System.out.println(Input);
         } // close getPersonalityType      
        
      int getOutdoors(){
             System.out.println("Outdoors value is: " + outdoors );
-            System.out.println("");
             return outdoors;
      }  //  close getOutdoors
      
      int getIndoors(){
             System.out.println("Indoors value is: " + indoors );
-            System.out.println("");
             return indoors;
         } // close getIndoors
         

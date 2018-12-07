@@ -20,7 +20,8 @@ public class Run {
         char TF;
         char JP;
         boolean charCheck = true;  //tests MBTI input validity
-
+        
+        //creates instances of each class
         PersonalityType pType = new PersonalityType();
         IorE iore = new IorE();
         NorS nors = new NorS();
@@ -110,14 +111,16 @@ public class Run {
             
         } // closes while loop - error 2 check
         
-        //
+        //Tells the user what they entered in all caps
         String InputU = Input.toUpperCase();
         pType.getPersonalityType(InputU);
         
+        
+        //runs the results from respective classes
         if (IE == 'E'){
             iore.Extroverted();
         }
-        if (IE == 'I'){
+        else{
             iore.Introverted();
         }
         if (NS == 'N'){
@@ -126,7 +129,18 @@ public class Run {
         if (IE == 'S'){
             nors.Sensing();
         }
-        
+        if (TF == 'T'){
+            torf.Thinking();
+        }
+        if (TF == 'F'){
+            torf.Feeling();
+        }
+        if (JP == 'J'){
+            jorp.Judging();
+        }
+        if (JP == 'P'){
+            jorp.Perceiving();
+        }
         
         
         
