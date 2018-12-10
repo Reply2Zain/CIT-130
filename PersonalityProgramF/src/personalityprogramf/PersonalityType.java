@@ -32,6 +32,11 @@ public class PersonalityType {
             System.out.println("Indoors value is: " + indoors );
             return indoors;
         } // close getIndoors
+     
+     void getAllPersonalityTypes(){
+         System.out.println("This will print out the description off all personality types. Specificity available upon request");
+         
+     }
         
 
 }

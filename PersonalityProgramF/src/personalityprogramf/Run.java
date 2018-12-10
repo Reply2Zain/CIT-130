@@ -12,9 +12,9 @@ import java.util.Scanner;
 
  
 public class Run {
-
-    public static void main(String[] args) {
-        // MBTI personality types
+    
+    public static void main(String[] args) {    
+      // MBTI personality types
         char IE; 
         char NS;
         char TF;
@@ -110,7 +110,7 @@ public class Run {
             }
             
         } // closes while loop - error 2 check
-        
+            
         //Tells the user what they entered in all caps
         String InputU = Input.toUpperCase();
         pType.getPersonalityType(InputU);
@@ -157,8 +157,8 @@ public class Run {
         System.out.println(outdoors);
         */
         
-        } // closes psvm
-    } // closes class
+    } // closes psvm
+} // closes class
 
     
     
