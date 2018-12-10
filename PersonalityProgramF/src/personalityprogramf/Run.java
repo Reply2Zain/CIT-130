@@ -22,7 +22,6 @@ public class Run {
         boolean charCheck = true;  //tests MBTI input validity
         
         //creates instances of each class
-        PersonalityType pType = new PersonalityType();
         IorE iore = new IorE();
         NorS nors = new NorS();
         TorF torf = new TorF();
@@ -76,7 +75,7 @@ public class Run {
          // Checks for error 2 - catches both length and letter type error
             while (inputLength != 4 || charCheck == false){
             
-             System.out.println("");
+            System.out.println("");
             System.out.println("Error: Please enter the exact 4 letters that are"
                     + " associated with your MBTI type: ");
             Input = sc.next();
@@ -113,43 +112,51 @@ public class Run {
             
         //Tells the user what they entered in all caps
         String InputU = Input.toUpperCase();
-        pType.getPersonalityType(InputU);
+        iore.getPersonalityType(InputU);
         
+        /*
         //Gets and prints out the personality description
         PersonalityDescription pdo = new PersonalityDescription();
         pdo.getPDescription(InputU);
+        */
         
         //runs the results from respective classes
         System.out.print("-----------");
+        
         if (IE == 'E'){
-            iore.Extroverted();
+            iore.getExtroverted();
         }
-        else{
-            iore.Introverted();
+        if (IE =='I'){
+            iore.getIntroverted();
         }
+        System.out.println(iore.displayTypeSummary());
+        
         if (NS == 'N'){
-            nors.Intuition();
+            nors.getIntuition();
         }
         if (IE == 'S'){
-            nors.Sensing();
+            nors.getSensing();
         }
+        System.out.println(nors.displayTypeSummary());
+        
         if (TF == 'T'){
-            torf.Thinking();
+            torf.getThinking();
         }
         if (TF == 'F'){
-            torf.Feeling();
+            torf.getFeeling();
         }
+        System.out.println(torf.displayTypeSummary());
+        
         if (JP == 'J'){
-            jorp.Judging();
+            jorp.getJudging();
         }
         if (JP == 'P'){
-            jorp.Perceiving();
+            jorp.getPerceiving();
         }
+        System.out.println(jorp.displayTypeSummary());
+      
         
-        
-        
-        
-        
+                
         System.out.println("");
         System.out.println("-----------");
         System.out.println("You have reached the end of the program.");
@@ -163,6 +170,8 @@ public class Run {
         */
         
     } // closes psvm
+
+   
 } // closes class
 
     

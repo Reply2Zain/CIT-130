@@ -10,7 +10,7 @@ package personalityprogramf;
  * @author Zain
  */
 
-public class PersonalityType {
+public abstract class PersonalityType {
         //These are the personality factors
         int outdoors;   
         int indoors;
@@ -36,6 +36,12 @@ public class PersonalityType {
          System.out.println("This will print out the description off all personality types. Specificity available upon request");
          
      }
+     
         
-
-}
+public abstract String displayTypeSummary();
+        String ioreDescription = "This is the description of the IorE dimension";
+        String norsDescription = "This is the description of the NorS dimension";
+        String jorpDescription = "This is the description of the JorP dimension";
+        String torfDescription = "This is the description of the TorF dimension";
+        
+} // Close Class
