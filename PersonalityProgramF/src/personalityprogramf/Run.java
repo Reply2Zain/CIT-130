@@ -115,8 +115,12 @@ public class Run {
         String InputU = Input.toUpperCase();
         pType.getPersonalityType(InputU);
         
+        //Gets and prints out the personality description
+        PersonalityDescription pdo = new PersonalityDescription();
+        pdo.getPDescription(InputU);
         
         //runs the results from respective classes
+        System.out.print("-----------");
         if (IE == 'E'){
             iore.Extroverted();
         }
@@ -147,7 +151,8 @@ public class Run {
         
         
         System.out.println("");
-        System.out.println("You reached the end of the program");
+        System.out.println("-----------");
+        System.out.println("You have reached the end of the program.");
         
         /*
         int results = pp.getOutdoors();

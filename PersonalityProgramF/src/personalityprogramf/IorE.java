@@ -10,24 +10,21 @@ package personalityprogramf;
  * @author Zain
  */
 public class IorE extends PersonalityType{
-    
-    
-                
-                
-                public void Extroverted(){
+             
+    public void Extroverted(){
                    outdoors += 1 ;
                     System.out.println("");
                     System.out.println("Extroverted diagnostic:");
                     System.out.println("Extroverted added one to outdoors");
                     getOutdoors();
-               }
+    } // Closes Extroverted
                 
-                public void Introverted(){
+    public void Introverted(){
                     indoors +=1;
                     System.out.println("");
                     System.out.println("Introverted diagnostic:");
                     System.out.println("Introverted has added one to indoors");
                     getIndoors();
-                }
+    } // Closes Introverted
         
 }

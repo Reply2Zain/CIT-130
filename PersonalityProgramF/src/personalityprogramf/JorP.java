@@ -16,13 +16,13 @@ public class JorP extends PersonalityType {
                     System.out.println("");
                     System.out.println("Judging diagnostic:");
                     System.out.println("Judging has added one to variable");
-    }
+    } // Closes Judging
     
       public void Perceiving(){
                     //variable += 1 ;
                     System.out.println("");
                     System.out.println("Perceiving diagnostic:");
                     System.out.println("Perceiving has added one to variable");
-    }
+    } // Closes Perceiving
     
 }
