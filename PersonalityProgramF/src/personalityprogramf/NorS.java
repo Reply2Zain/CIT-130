@@ -15,8 +15,7 @@ public class NorS extends PersonalityType {
                    outdoors += 1 ;
                     System.out.println("");
                     System.out.println("Intution diagnostic:");
-                    System.out.println("Intition has added one to outdoors");
-                     
+                    System.out.println("Intition has added one to outdoors");                 
     } // Closes Intuition
      
     public void Sensing(){
