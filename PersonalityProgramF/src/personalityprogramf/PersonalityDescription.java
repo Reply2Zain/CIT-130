@@ -90,10 +90,10 @@ public class PersonalityDescription {
         + "\nsmall matters. Notice what others need in their day-by-day lives and try to provide it. Want to be appreciated "
         + "\nfor who they are and for what they contribute.\n");
        pDescription.put("ENFJ", "" +
-                    "Warm, empathetic, responsive, and responsible. Highly attuned to the emotions, needs, and motivations of "
-        + "\nothers. Find potential in everyone, want to help others fulfill their potential. May act as catalysts for individual "
-        + "\nand group growth. Loyal, responsive to praise and criticism. Sociable, facilitate others in a group, and "
-        + "\nprovide inspiring leadership.\n");
+                    "Warm, empathetic, responsive, and responsible. Highly attuned to the emotions, needs, and motivations "
+        + "\nof others. Find potential in everyone, want to help others fulfill their potential. May act as catalysts for "
+        + "\nindividual and group growth. Loyal, responsive to praise and criticism. Sociable, facilitate others in a group, "
+        + "\nand provide inspiring leadership.\n");
        pDescription.put("ENTJ", "" +
                     "Frank, decisive, assume leadership readily. Quickly see illogical and inefficient procedures and policies, "
         + "\ndevelop and implement comprehensive systems to solve organizational problems. Enjoy long-term planning and "
