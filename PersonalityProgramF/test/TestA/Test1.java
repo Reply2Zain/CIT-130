@@ -12,11 +12,30 @@ package TestA;
 public class Test1 {
     
     public static void main(String[] args) {
-        System.out.println("ISTJ\n" +
-"Quiet, serious, earn success by thoroughness and dependability. Practical, matter-of-fact, realistic, and responsible. "
+        
+        //creating Strings for each personality type
+        String stringISTJ = "ISTJ\n" +
+                "Quiet, serious, earn success by thoroughness and dependability. Practical, matter-of-fact, realistic, and responsible. "
+                + "\nDecide logically what should be done and work toward it steadily, regardless of distractions. "
+                + "\nTake pleasure in making everything orderly and organized - their work, their home, their life. "
+                + "\nValue traditions and loyalty.\n";
+        
+        String stringISFJ = "ISFJ\n" +
+"Quiet, friendly, responsible, and conscientious. Committed and steady in meeting their obligations. "
+        + "\nThorough, painstaking, and accurate. Loyal, considerate, notice and remember specifics "
+        + "\nabout people who are important to them, concerned with how others feel. Strive to create"
+        + "\n an orderly and harmonious environment at work and at home.\n";
+        
+        
+        //Prints out each personality type
+        
+       System.out.println("ISTJ\n" +
+                "Quiet, serious, earn success by thoroughness and dependability. Practical, matter-of-fact, realistic, and responsible. "
                 + "\nDecide logically what should be done and work toward it steadily, regardless of distractions. "
                 + "\nTake pleasure in making everything orderly and organized - their work, their home, their life. "
                 + "\nValue traditions and loyalty.\n");
+        
+
         System.out.println(
 "\n" +
 "ISFJ\n" +
