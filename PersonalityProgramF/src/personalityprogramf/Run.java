@@ -114,11 +114,6 @@ public class Run {
         String InputU = Input.toUpperCase();
         iore.getPersonalityType(InputU);
         
-        /*
-        //Gets and prints out the personality description
-        PersonalityDescription pdo = new PersonalityDescription();
-        pdo.getPDescription(InputU);
-        */
         
         //runs the results from respective classes
         System.out.print("-----------");
