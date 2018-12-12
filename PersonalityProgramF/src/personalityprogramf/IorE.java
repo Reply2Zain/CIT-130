@@ -9,7 +9,7 @@ package personalityprogramf;
  *
  * @author Zain
  */
-public class IorE extends PersonalityType{
+public class IorE extends PersonalityType implements MyInterface{
     
     public void getExtroverted(){
                     outdoors += 1 ;
@@ -32,5 +32,13 @@ public class IorE extends PersonalityType{
     public String displayTypeSummary(){
         return ioreDescription;
     }
-        
+    
+  public void saayEffective(){
+      System.out.println(TipsEffective);
+    }      
+
+    @Override
+    public void sayEffective() {
+        System.out.println(TipsEffective);    
+    }
 }

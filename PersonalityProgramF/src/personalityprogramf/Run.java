@@ -131,6 +131,7 @@ public class Run {
         if (IE =='I'){
             iore.getIntroverted();
         }
+        iore.sayEffective();
         pdo.getEachDescription(IE);
         
         System.out.println("");

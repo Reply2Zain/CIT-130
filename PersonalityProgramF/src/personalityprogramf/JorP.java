@@ -9,7 +9,7 @@ package personalityprogramf;
  *
  * @author Zain
  */
-public class JorP extends PersonalityType {
+public class JorP extends PersonalityType{
     
     public void getJudging(){
                     //variable += 1 ;
@@ -29,4 +29,6 @@ public class JorP extends PersonalityType {
     public String displayTypeSummary(){
         return jorpDescription; 
     }
+    
+    
 }
