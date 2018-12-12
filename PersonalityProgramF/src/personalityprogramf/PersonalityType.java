@@ -88,29 +88,35 @@ public abstract class PersonalityType {
     
     //Description of each class
     String iDescription =
-            "Having a preference of intraversion over extravarsion means that you work better"
+            "Study Tip: Having a preference of intraversion over extravarsion means that you work better"
             + "\nin a personal, more individual setting. You like to plan things out, which is a good trait "
             + "\nto have. Mind maps can help connect your thoughts. If you do end up studying with others,"
             + "\n try to not pick a group of friends who are too outgoing or producitivty would diminish";
     String eDescription =
-            "Having a preference of extroversion over intraversion means that you work better in "
+            "Study Tip: Having a preference of extroversion over intraversion means that you work better in "
             + "\n a social, outgoing environment. It is beneficial at times to think out loud and "
             + "\nto bounce ideas around with others. Try to discuss concepts with people who share "
             + "\nthe same interests. Extroverts are more likely to skip mundane, boring tasks which"
             + "\ncan be a detriment especially when it is related to schoolwork.";
-    String nDescription ="Being intuitive means that you like to know the why. Looking for patterns"
+    String nDescription =
+            "Study Tip: Being intuitive means that you like to know the why. Looking for patterns"
             + "\nand relationships often help and go a long way. Use your energy wisely and take breaks "
             + "\never to often to make the most out of your study time. Take part in evidence based note-taking"
             + "\n and always see why the certain thing is important.";
     String sDescription =
-            "Make diagrams and outlines while studying. Flash cards and visual aids help a lot in retaining"
+            "Study Tip:Make diagrams and outlines while studying. Flash cards and visual aids help a lot in retaining"
             + "\nideas. Hands-on activities are also beneficial to do when possible. It may be easy to forget"
             + "\nthe big picture at times...don't.";
-    String tDescription ="Having a preference of Thinking means that you prefer logic. Think about your"
+    String tDescription ="Study Tip: Having a preference of Thinking means that you prefer logic. Think about your"
             + "/nchoices and make learning/studying a thinking endeavor with reasons why to increase motivation.";
-    String fDescription ="This is the I description";
-    String jDescription ="This is the I description";
-    String pDescription ="This is the I description";
+    String fDescription ="Study Tip: Feeling types tend to look for a pesonal connection to find reason in their work. Working"
+            + "\nin group settings with people who you are have some sort of relationship with enhances productivity.";
+    String jDescription =
+            "Study Tip: judging types like to have a structured day with organized things to do. It is better to "
+            + "\nto make a list and organzie your day and prioritize the bigger, more important tasks first. ";
+    String pDescription =
+            "Study Tip: Perceiving types like to work when they have a lot of flexibility. The biggest problem is "
+            + "\nprocrassination. Keep your work enviornment free of distactions";
         
                 
         

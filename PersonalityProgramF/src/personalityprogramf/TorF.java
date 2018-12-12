@@ -15,15 +15,15 @@ public class TorF extends PersonalityType {
     public void getThinking(){
                     //variable += 1 ;
                     System.out.println("");
-                    System.out.println("Thinking diagnostic: ");
-                    System.out.println("Thinking has added one to variable");
+                    System.out.println("You are a Thinker: ");
+                    //System.out.println("Thinking has added one to variable");
     } // Closes Thinking
     
     public void getFeeling(){
                     //variable += 1 ;
                     System.out.println("");
-                    System.out.println("Thinking diagnostic: ");
-                    System.out.println("Thinking has added one to variable");
+                    System.out.println("You are a Feeler: ");
+                    //System.out.println("Thinking has added one to variable");
     } // Closes Feeling
 @Override
     public String displayTypeSummary(){
