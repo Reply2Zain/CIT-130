@@ -112,44 +112,70 @@ public class Run {
             
         //Tells the user what they entered in all caps
         String InputU = Input.toUpperCase();
-        iore.getPersonalityType(InputU);
+        iore.getEnteredPType(InputU);
         
+        //create instance of PersonalityDesctiption - gets the
+        PersonalityDescription pdo = new PersonalityDescription();
         
         //runs the results from respective classes
-        System.out.print("-----------");
+        System.out.println("");
         
+        //I & E
+        System.out.println("Extraversion (E) vs Introvesion (I):");
+        if (pdo.getMoreInfo()){
+        System.out.println(iore.displayTypeSummary());
+        }
         if (IE == 'E'){
             iore.getExtroverted();
         }
         if (IE =='I'){
             iore.getIntroverted();
         }
-        System.out.println(iore.displayTypeSummary());
+        pdo.getEachDescription(IE);
         
+        System.out.println("");
+        // N & S
+        System.out.println("Intuition (N) vs Sensing (S) :");
+        if (pdo.getMoreInfo()){
+        System.out.println(nors.displayTypeSummary());
+        }
         if (NS == 'N'){
             nors.getIntuition();
         }
         if (IE == 'S'){
             nors.getSensing();
         }
-        System.out.println(nors.displayTypeSummary());
+        pdo.getEachDescription(NS);
         
+        System.out.println("");
+        //T & F
+        System.out.println("Thinking (T) vs Feeling (F):");
+        if (pdo.getMoreInfo()){
+        System.out.println(torf.displayTypeSummary());
+        }
         if (TF == 'T'){
             torf.getThinking();
         }
         if (TF == 'F'){
             torf.getFeeling();
         }
-        System.out.println(torf.displayTypeSummary());
+        pdo.getEachDescription(NS);
         
+        System.out.println("");
+        //J & P
+        System.out.println("Judging (J) vs Perceiving (P):");
+        if (pdo.getMoreInfo()){
+        System.out.println(jorp.displayTypeSummary());
+        }
         if (JP == 'J'){
             jorp.getJudging();
         }
         if (JP == 'P'){
             jorp.getPerceiving();
         }
-        System.out.println(jorp.displayTypeSummary());
-      
+        pdo.getEachDescription(NS);
+        
+        
         
                 
         System.out.println("");
