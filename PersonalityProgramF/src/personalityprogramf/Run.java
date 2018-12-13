@@ -146,6 +146,7 @@ public class Run {
         if (IE == 'S'){
             nors.getSensing();
         }
+        nors.sayEffective();
         pdo.getEachDescription(NS);
         
         System.out.println("");

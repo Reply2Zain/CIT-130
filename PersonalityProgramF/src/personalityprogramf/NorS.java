@@ -5,21 +5,22 @@
  */
 package personalityprogramf;
 
+
 /**
  *
  * @author reply
  */
-public class NorS extends PersonalityType {
+public class NorS extends PersonalityType implements MyInterface{
          
     public void getIntuition(){
-                   outdoors += 1 ;
+                   //outdoors += 1 ;
                     System.out.println("");
                     System.out.println("You are Intuitive:");
                     //System.out.println("Intition has added one to outdoors");                 
     } // Closes Intuition
      
     public void getSensing(){
-                    indoors +=1;
+                    //indoors +=1;
                     System.out.println("");
                     System.out.println("You are a Senser:");
                     //System.out.println("Sensing as added one to indoors");
@@ -30,4 +31,7 @@ public class NorS extends PersonalityType {
         return norsDescription;
     }
      
+    public void sayEffective() {
+        System.out.println(TipsEffective);    
+    }
 }

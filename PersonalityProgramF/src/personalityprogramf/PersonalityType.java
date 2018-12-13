@@ -44,7 +44,7 @@ public abstract class PersonalityType {
      }
      
      boolean getMoreInfo(){
-         System.out.print("Would you like to receive background information on this? > ");
+         System.out.print("Would you like to receive background information on these two types? (yes or no) > ");
          String Input = scanInfo.next();
             return Input.equalsIgnoreCase("yes");
      }

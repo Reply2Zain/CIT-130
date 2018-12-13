@@ -32,10 +32,7 @@ public class IorE extends PersonalityType implements MyInterface{
     public String displayTypeSummary(){
         return ioreDescription;
     }
-    
-  public void saayEffective(){
-      System.out.println(TipsEffective);
-    }      
+        
 
     @Override
     public void sayEffective() {

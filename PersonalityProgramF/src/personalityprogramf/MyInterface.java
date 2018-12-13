@@ -11,6 +11,6 @@ package personalityprogramf;
  */
 public interface MyInterface {
    public String TipsEffective = "-Study Tips from this type are effective-";
-
+   
     public void sayEffective();
 }
