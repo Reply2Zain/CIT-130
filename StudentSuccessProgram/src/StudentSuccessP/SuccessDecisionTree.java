@@ -83,8 +83,11 @@ public class SuccessDecisionTree {
             System.out.println("Please go to the student success office for more information.");
                 }
         }
-        else {
+        else if (answer.equals("no")) {
             System.out.println("That's great!");
+        }
+        else{
+            System.out.println("Lets move on.");
         }
     }
     
