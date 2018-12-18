@@ -18,6 +18,7 @@ public class SuccessDecisionTree {
 
     public void StudentSuccessQuestions(){
         System.out.println("Welcome to the Student Success Program!");
+        System.out.println("");
         System.out.println("All inputted answers should be either 'yes' or 'no' unless otherwise specified ");
         System.out.println("Are you stressed and/or facing any difficulites in school?");
         ev();
@@ -31,7 +32,7 @@ public class SuccessDecisionTree {
             if (answer.equals ("yes")){
                 System.out.println("Is it due to homework");
                 ev();
-            answer = sq.next();
+                answer = sq.next();
                 if (answer.equals ("yes")){
                 System.out.println("Is the coursload too difficult or homework too demanding?");
                     System.out.println("Please enter 'difficult' or 'demanding'");
@@ -42,12 +43,12 @@ public class SuccessDecisionTree {
                         ev();
                         answer = sq.next();
                         if (answer.equals("math")){
-                            System.out.println("Try going to the Math Cafe, there are math tutors there who are able to help.");
+                            System.out.println("Advice: Try going to the Math Cafe, there are math tutors there who are able to help.");
                         }
                         else if (answer.equals("english"))
-                            System.out.println("Try going to the Learning Commons, there are English tutors there who are able to help. ");
+                            System.out.println("Advice: Try going to the Learning Commons, there are English tutors there who are able to help. ");
                         else {
-                            System.out.println("Try going the tutoring services at CCAC, they can be found at the library.");
+                            System.out.println("Advice: Try going the tutoring services at CCAC, they can be found at the library.");
                         }
                     }
                     else {
@@ -64,15 +65,13 @@ public class SuccessDecisionTree {
                         ev();
                         answer = sq.next();
                         if (answer.equals("math")){
-                            System.out.println("Try going to the Math Cafe, there are math tutors there who are able to help.");
+                            System.out.println("Advice: Try going to the Math Cafe, there are math tutors there who are able to help.");
                         }
                         else if (answer.equals("english"))
-                            System.out.println("Try going to the Learning Commons, there are English tutors there who are able to help. ");
+                            System.out.println("Advice: Try going to the Learning Commons, there are English tutors there who are able to help. ");
                         else {
-                            System.out.println("Try going the tutoring services at CCAC, they can be found at the library.");
+                            System.out.println("Advice: Try going the tutoring services at CCAC, they can be found at the library.");
                         }
-                        
-                    
                 }
                 else{
                     System.out.println("Please try the student success office or a counselor for more assistance.");
