@@ -17,7 +17,7 @@ public class Run {
           // Creates scanner object 
         Scanner sc = new Scanner(System.in);
         String answer = null;
-        StudentSuccessQuestions sq = new StudentSuccessQuestions();
+        SuccessDecisionTree sq = new SuccessDecisionTree();
         sq.StudentSuccessQuestions();
         
         // Runs personality portion of the program

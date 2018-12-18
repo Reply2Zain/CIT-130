@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author Zain
  */
-public class StudentSuccessQuestions {
+public class SuccessDecisionTree {
       Scanner sq = new Scanner (System.in);
       
       private void ev(){
@@ -42,12 +42,12 @@ public class StudentSuccessQuestions {
                         ev();
                         answer = sq.next();
                         if (answer.equals("math")){
-                            System.out.println("Try going to the Math Cafe, there are math tutors there who are able to help");
+                            System.out.println("Try going to the Math Cafe, there are math tutors there who are able to help.");
                         }
-                        if (answer.equals("english"))
-                            System.out.println("Try going to the Learning Commons, there are English tutors there who are able to help ");
-                        if (answer.equals("other")){
-                            System.out.println("Try going the tutoring services at CCAC, they can be found at the library");
+                        else if (answer.equals("english"))
+                            System.out.println("Try going to the Learning Commons, there are English tutors there who are able to help. ");
+                        else {
+                            System.out.println("Try going the tutoring services at CCAC, they can be found at the library.");
                         }
                     }
                     else {
@@ -56,11 +56,31 @@ public class StudentSuccessQuestions {
                     }
                 }
                 else {
-                System.out.println("");
+                System.out.println("Is is due to exams?");
+                ev();
+                answer = sq.next();
+                if (answer.equals("yes") ){
+                    System.out.println("What subject of the exam? enter one: math, english, other");
+                        ev();
+                        answer = sq.next();
+                        if (answer.equals("math")){
+                            System.out.println("Try going to the Math Cafe, there are math tutors there who are able to help.");
+                        }
+                        else if (answer.equals("english"))
+                            System.out.println("Try going to the Learning Commons, there are English tutors there who are able to help. ");
+                        else {
+                            System.out.println("Try going the tutoring services at CCAC, they can be found at the library.");
+                        }
+                        
+                    
+                }
+                else{
+                    System.out.println("Please try the student success office or a counselor for more assistance.");
+                }
                 }
             }
             else {
-            System.out.println("Please go to the student success office for more information");
+            System.out.println("Please go to the student success office for more information.");
                 }
         }
         else {
