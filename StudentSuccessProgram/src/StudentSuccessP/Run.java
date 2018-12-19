@@ -172,7 +172,7 @@ public class Run {
         if (TF == 'F'){
             torf.getFeeling();
         }
-        pdo.getEachDescription(NS);
+        pdo.getEachDescription(TF);
         
         System.out.println("");
         //J & P
@@ -186,7 +186,7 @@ public class Run {
         if (JP == 'P'){
             jorp.getPerceiving();
         }
-        pdo.getEachDescription(NS);
+        pdo.getEachDescription(JP);
         
         
         

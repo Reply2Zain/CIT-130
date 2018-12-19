@@ -101,14 +101,14 @@ public abstract class PersonalityType {
     String nDescription =
             "Study Tip: Being intuitive means that you like to know the why. Looking for patterns"
             + "\nand relationships often help and go a long way. Use your energy wisely and take breaks "
-            + "\never to often to make the most out of your study time. Take part in evidence based note-taking"
+            + "\never so often to make the most out of your study time. Take part in evidence based note-taking"
             + "\n and always see why the certain thing is important.";
     String sDescription =
             "Study Tip:Make diagrams and outlines while studying. Flash cards and visual aids help a lot in retaining"
             + "\nideas. Hands-on activities are also beneficial to do when possible. It may be easy to forget"
             + "\nthe big picture at times...don't.";
     String tDescription ="Study Tip: Having a preference of Thinking means that you prefer logic. Think about your"
-            + "/nchoices and make learning/studying a thinking endeavor with reasons why to increase motivation.";
+            + "\nchoices and make learning/studying a thinking endeavor with reasons why to increase motivation.";
     String fDescription ="Study Tip: Feeling types tend to look for a pesonal connection to find reason in their work. Working"
             + "\nin group settings with people who you are have some sort of relationship with enhances productivity.";
     String jDescription =
