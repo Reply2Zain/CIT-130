@@ -51,15 +51,23 @@ public abstract class PersonalityType {
      
     String ioreDescription = 
             "The first of the four preferences is Introversion vs Extraversion. Extroverts "
-            + "get their energy from the outside environment including people and places. "
-            + "\nThey feel better and are more productive when in social settings and "
-            + "often look forward to going out. Introvertson the other hand get their energy "
-            + "\nfrom within themselves and are more productive when in by themselves. Social "
-            + "settings drain the enrgy of an introvert and does not come off as a productive"
-            + "\nenviornemnt for them. Extroverted people are accessible and seem to process "
-            + "things faster due to their ''act first think later'' attitude. Introverted "
-            + "\npeople on the other hand tend to have a more reserved attitude and can easily "
-            + "end up thinking deeply about a given before acting.";
+            + "get their energy "
+            + "\nfrom the outside environment including people and places. "
+            + "They feel better and are more productive "
+            + "\nwhen in social settings and "
+            + "often look forward to going out. Introvertson the other hand get their"
+            + "\n energyfrom within themselves "
+            + "and are more productive when in by themselves. Social "
+            + "settings drain "
+            + "\nthe energy of an introvert and does not come "
+            + "off as a productive"
+            + "enviornemnt for them. Extroverted "
+            + "\npeople are accessible and seem to process "
+            + "things faster due to "
+            + "their ''act first think later''"
+            + "\nattitude. Introverted "
+            + "people on the other hand tend to have a more reserved attitude and can easily "
+            + "\nend up thinking deeply about a given before acting.";
     
     String norsDescription = 
             "The difference between intuition and sensing are includes the way we process new"
