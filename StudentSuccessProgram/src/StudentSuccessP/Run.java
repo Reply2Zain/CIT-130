@@ -28,7 +28,7 @@ public class Run {
         System.out.print("> ");
         String Input = sc.next();
         
-        if("yes".equals(Input) ){
+        if("yes".equalsIgnoreCase(Input) ){
     
         // MBTI personality types
         char IE; 
